@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: brian24/testweb:green
+        image: nginx
         ports:
         - containerPort: 80
 ---
@@ -32,5 +32,5 @@ spec:
     port: 80
     # nodePort: 31008
   selector:
-    app: my-nginx-pods-label
+    app: nginx
   type: LoadBalancer
